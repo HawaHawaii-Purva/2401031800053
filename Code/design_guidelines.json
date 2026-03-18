@@ -1,0 +1,144 @@
+
+{
+  "project_name": "Customized Workout Planner",
+  "app_type": "SaaS",
+  "design_philosophy": {
+    "persona": "E1: The Anti-AI Designer",
+    "core_concept": "Electric Performance",
+    "emotional_archetype": "ARCHETYPE 2 (Performance Pro) mixed with ARCHETYPE 7 (Electric)",
+    "vibe": "Kinetic, Tactical, High-Contrast, Elite",
+    "principles": [
+      "Fusion over Imitation: Tactical Gym aesthetics mixed with Cyberpunk neons",
+      "Emotion First: Every interaction should feel 'heavy' and 'powerful'",
+      "Content is King: Data is the hero, not the container",
+      "Negative Space: Use black void to make neon pop"
+    ]
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Barlow Condensed, Oswald, sans-serif",
+      "body": "Inter, DM Sans, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-6xl md:text-8xl font-black uppercase tracking-tighter leading-none",
+      "h2": "text-4xl md:text-6xl font-bold uppercase tracking-tight",
+      "h3": "text-2xl md:text-3xl font-bold uppercase tracking-tight",
+      "body": "text-base md:text-lg font-normal leading-relaxed text-muted-foreground",
+      "small": "text-sm font-medium tracking-wide uppercase text-muted-foreground"
+    },
+    "installation": "Import from Google Fonts in index.css: @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400&display=swap');"
+  },
+  "colors": {
+    "palette": {
+      "background": "#0A0A0A",
+      "foreground": "#FFFFFF",
+      "card": "#121212",
+      "card_foreground": "#FFFFFF",
+      "primary": "#CCFF00",
+      "primary_foreground": "#000000",
+      "secondary": "#27272A",
+      "secondary_foreground": "#FFFFFF",
+      "muted": "#18181B",
+      "muted_foreground": "#A1A1AA",
+      "accent": "#CCFF00",
+      "accent_foreground": "#000000",
+      "destructive": "#FF3B30",
+      "border": "#27272A",
+      "input": "#27272A",
+      "ring": "#CCFF00"
+    },
+    "gradients": {
+      "hero_glow": "radial-gradient(circle at center, rgba(204, 255, 0, 0.15) 0%, transparent 70%)",
+      "neon_border": "linear-gradient(90deg, transparent, #CCFF00, transparent)"
+    },
+    "rules": [
+      "NO gradients on text unless it's a massive H1",
+      "Background is never pure black (#000000), use Obsidian (#0A0A0A)",
+      "Primary color (Neon Lime) is for Action only (Buttons, Active States)"
+    ]
+  },
+  "layout": {
+    "grid_system": {
+      "marketing": "Grid Mode A: Tetris Grid (12 cols, wide gaps)",
+      "dashboard": "Grid Mode B: High Density Bento (4 cols, tight gaps)"
+    },
+    "spacing": {
+      "container_padding": "p-6 md:p-12 lg:p-24",
+      "element_gap": "gap-4 md:gap-8"
+    },
+    "container_width": "max-w-7xl mx-auto"
+  },
+  "components": {
+    "buttons": {
+      "style": "sharp-edges or slightly rounded (rounded-sm)",
+      "variants": {
+        "primary": "bg-[#CCFF00] text-black hover:bg-[#B3E600] font-bold uppercase tracking-wider",
+        "secondary": "bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm border border-white/10",
+        "outline": "border border-[#CCFF00] text-[#CCFF00] hover:bg-[#CCFF00]/10",
+        "ghost": "hover:bg-white/5 text-gray-300 hover:text-white"
+      }
+    },
+    "cards": {
+      "style": "Glassmorphism or Solid Matte",
+      "base_class": "bg-[#121212] border border-white/5 shadow-2xl overflow-hidden",
+      "hover_effect": "hover:border-[#CCFF00]/50 transition-colors duration-300"
+    },
+    "inputs": {
+      "style": "Flat, dark, high contrast focus",
+      "class": "bg-[#18181B] border-white/10 focus:border-[#CCFF00] focus:ring-1 focus:ring-[#CCFF00] text-white rounded-sm h-12"
+    },
+    "navigation": {
+      "style": "Floating Glass Bar",
+      "class": "fixed top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-5xl bg-black/60 backdrop-blur-xl border border-white/10 rounded-full z-50 px-6 py-4 flex items-center justify-between"
+    }
+  },
+  "visual_enhancers": {
+    "texture": "Add subtle noise overlay to the background using a fixed opacity png or css pattern.",
+    "borders": "Use 'Tracing Beam' effect on active dashboard cards.",
+    "shadows": "Glow effects instead of drop shadows: box-shadow: 0 0 20px rgba(204, 255, 0, 0.2)",
+    "icons": "Lucide React (default), Phosphor Icons (Bold/Fill weight for emphasis)"
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1766389088588-21e13679ffa3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxhdGhsZXRlJTIwc3ByaW50aW5nJTIwZGFyayUyMGJhY2tncm91bmQlMjBuZW9ufGVufDB8fHx8MTc3Mzc5NDk4OHww&ixlib=rb-4.1.0&q=85",
+      "description": "Woman outlined in neon green light against black",
+      "category": "Hero"
+    },
+    "abstract_energy": {
+      "url": "https://images.unsplash.com/photo-1762278805090-a666fc05f0f7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwzfHxhdGhsZXRlJTIwc3ByaW50aW5nJTIwZGFyayUyMGJhY2tncm91bmQlMjBuZW9ufGVufDB8fHx8MTc3Mzc5NDk4OHww&ixlib=rb-4.1.0&q=85",
+      "description": "Abstract streaks of yellow and green light",
+      "category": "Background/Texture"
+    },
+    "gym_atmosphere": {
+      "url": "https://images.unsplash.com/photo-1770513649465-2c60c8039806?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxneW0lMjB3b3Jrb3V0JTIwaW50ZW5zZSUyMG1vb2QlMjBsaWdodGluZ3xlbnwwfHx8fDE3NzM3OTQ5ODl8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Dark gym interior with exercise equipment",
+      "category": "Section Background"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install 'framer-motion' for animations.",
+    "Install 'lucide-react' for icons.",
+    "Configure Tailwind theme to match the Color Palette precisely.",
+    "Create a layout wrapper that applies the noise texture and background color globally.",
+    "Use Shadcn components but OVERRIDE their default styles to match the 'Electric Performance' theme.",
+    "Ensure ALL text has sufficient contrast. Use APCA check if unsure.",
+    "For the Workout Plan display, use a Masonry or Bento grid layout to show different days/exercises.",
+    "Implement a 'Progress Tracker' using Chart.js or Recharts with Neon lines on dark backgrounds.",
+    "Use the 'Tracing Beam' effect for the 'Generate Plan' button or loading state."
+  ],
+  "universal_guidelines": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all.",
+    "You MUST NOT center align the app container.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations.",
+    "Components MUST use named exports.",
+    "Pages MUST use default exports.",
+    "Use sonner for toasts."
+ ]
+}
